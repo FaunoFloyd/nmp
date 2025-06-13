@@ -1,81 +1,87 @@
-# NMP - Network Management Portal v1.0
+# Network Management Package (NMP)
 
+A distributed network diagnostic and management tool that allows running network tests across multiple machines.
 
-A versatile and interactive command-line toolkit for network diagnostics. Designed for network administrators and support engineers, NMP provides a suite of essential tools to troubleshoot network issues on both Windows and Linux systems.
+## Features
 
-## ✨ Features
+- Remote command execution with security controls
+- Network diagnostics (ping, nmap, curl, etc.)
+- PCAP capture capabilities
+- MTU discovery
+- Active connection monitoring
+- Cross-platform support (Windows/Linux)
+- Async command execution
+- Configurable retry mechanisms
+- Comprehensive logging
 
-NMP wraps powerful command-line tools into a single, user-friendly script, making network diagnostics faster and more efficient.
+## Installation
 
-- **Cross-Platform:** Fully functional on both **Windows** and **Linux** operating systems.
-- **Interactive Menu:** An easy-to-navigate menu to select the right tool for the job.
-- **Automated Tool Installation:** Automatically prompts to install missing dependencies like Nmap, Nping, and Curl on Linux.
-- **Comprehensive Logging:** Saves the output of every test to a timestamped log file on your desktop for easy review.
-- **Cross-Platform Tools Suite:**
-    - **Nmap & Nping:** For advanced port scanning and packet crafting.
-    - **Curl:** For detailed HTTP/S analysis, including header checks, port connectivity, and latency timing.
-    - **PCAP Capture:** Captures network traffic to a `.pcap` file for deep-dive analysis in tools like Wireshark.
-    - **MTU Discovery:** Automatically determines the optimal Maximum Transmission Unit for a network path to diagnose fragmentation issues.
-    - **Netstat:** Displays all active network connections and listening ports.
-    - **Full Diagnostic:** Runs a comprehensive suite of tests against a single target for a complete network health check.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/nmp.git
+cd nmp
+```
 
----
+2. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+# On Linux:
+source venv/bin/activate
+```
 
-## 🚀 Getting Started
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-### Prerequisites
+4. Configure the application:
+- Copy `config.ini.example` to `config.ini`
+- Update the configuration with your settings
+- Set environment variables if needed:
+  ```bash
+  # Windows PowerShell
+  $env:API_KEY="your-secret-key"
+  # Linux/Mac
+  export API_KEY="your-secret-key"
+  ```
 
-- **Python 3.6+**
-- **pip** (for installing dependencies)
+## Usage
 
-For some tests, administrative/root privileges are required to install packages or capture packets. The script will prompt you if elevated permissions are needed.
+1. Start the agent on target machines:
+```bash
+python agent.py
+```
 
-### Installation & Usage
+2. Run the controller on the main machine:
+```bash
+python controller.py
+```
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/nmp.git](https://github.com/your-username/nmp.git)
-    cd nmp
-    ```
+3. Use the interactive menu to run network diagnostics.
 
-2.  **Install the required Python package:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+## Security Notes
 
-3.  **Run the script:**
-    ```bash
-    python net.py
-    ```
-    On Linux, you may need to run with `sudo` for certain features:
-    ```bash
-    sudo python net.py
-    ```
+- Always change the default API key in production
+- Use SSL in production environments
+- Review and restrict allowed commands as needed
+- Run with appropriate privileges (some tests require admin/root)
 
-4.  **Follow the on-screen menu** to select and run your desired diagnostic test.
+## Development
 
----
+- Run tests: `pytest`
+- Format code: `black .`
+- Type checking: `mypy .`
 
-## 🛠️ Available Tests
+## Contributing
 
-1.  **Nmap:** Advanced port and service scanning.
-2.  **Nping:** Network packet generation and analysis.
-3.  **Curl:** In-depth web request diagnostics (headers, port connectivity, latency).
-4.  **Extended ping test:** A standard, continuous ping test.
-5.  **PCAP capture:** Captures network packets for offline analysis.
-6.  **MTU Discovery Test:** Finds the optimal packet size for a network path.
-7.  **List Active Connections:** Shows all active TCP/UDP connections via `netstat`.
-8.  **Full Diagnostic:** A sequential run of the most critical tests.
-9.  **Exit:** Closes the application.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
----
+## License
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/nmp/issues).
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.

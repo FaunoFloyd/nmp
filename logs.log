@@ -1,0 +1,255 @@
+2025-06-06 14:46:01,924 - DEBUG - Starting main function.
+2025-06-06 14:46:02,037 - DEBUG - Detected OS: windows
+2025-06-06 14:46:02,037 - DEBUG - Checking admin privileges...
+2025-06-06 14:46:02,050 - DEBUG - Admin privileges: Yes
+2025-06-06 14:46:02,051 - INFO - OS detected: windows
+2025-06-06 14:46:02,051 - INFO - Admin privileges: Yes
+2025-06-06 14:46:02,051 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-06 14:46:02,051 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-06 14:46:02,052 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-06 14:46:02,052 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250606_144602.txt
+2025-06-06 14:46:02,053 - DEBUG - Output file created.
+2025-06-06 14:54:25,184 - DEBUG - User selected menu option: 3
+2025-06-06 14:54:28,953 - DEBUG - User selected Curl test type: 2
+2025-06-06 14:54:39,929 - DEBUG - Port '3389' is a valid port number.
+2025-06-06 14:54:39,929 - DEBUG - Running Curl Port Connectivity test on: telnet://10.119.73.4:3389
+2025-06-06 14:54:39,930 - DEBUG - Preparing to run command: ['C:\\WINDOWS\\system32\\curl.EXE', '-v', '--connect-timeout', '10', 'telnet://10.119.73.4:3389'] with label: Curl Port Connectivity
+2025-06-06 14:54:40,184 - DEBUG - Command started: ['C:\\WINDOWS\\system32\\curl.EXE', '-v', '--connect-timeout', '10', 'telnet://10.119.73.4:3389']
+2025-06-06 14:54:50,310 - ERROR - Curl Port Connectivity failed: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 10.119.73.4:3389...
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0* Connection timed out after 10009 milliseconds
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0
+* closing connection #0
+curl: (28) Connection timed out after 10009 milliseconds
+2025-06-06 14:54:50,310 - DEBUG - Command Curl Port Connectivity finished.
+2025-06-06 14:55:32,145 - DEBUG - User selected menu option: 10.119.4.73
+2025-06-06 14:55:32,145 - WARNING - Invalid selection.
+2025-06-06 14:55:34,472 - DEBUG - User selected menu option: 3
+2025-06-06 14:55:37,832 - DEBUG - User selected Curl test type: 2
+2025-06-06 14:55:44,577 - DEBUG - Port '3389' is a valid port number.
+2025-06-06 14:55:44,577 - DEBUG - Running Curl Port Connectivity test on: telnet://10.119.4.73:3389
+2025-06-06 14:55:44,578 - DEBUG - Preparing to run command: ['C:\\WINDOWS\\system32\\curl.EXE', '-v', '--connect-timeout', '10', 'telnet://10.119.4.73:3389'] with label: Curl Port Connectivity
+2025-06-06 14:55:44,653 - DEBUG - Command started: ['C:\\WINDOWS\\system32\\curl.EXE', '-v', '--connect-timeout', '10', 'telnet://10.119.4.73:3389']
+2025-06-06 17:10:19,199 - WARNING - Curl Port Connectivity interrupted by user.
+2025-06-06 17:10:19,291 - DEBUG - Command Curl Port Connectivity finished.
+2025-06-06 17:11:15,277 - DEBUG - User selected menu option: 3
+2025-06-06 17:11:18,212 - DEBUG - User selected Curl test type: 1
+2025-06-06 17:11:43,484 - DEBUG - Port '4600' is a valid port number.
+2025-06-06 17:11:43,485 - DEBUG - Running Curl Header Check on URL: http://kcafeprdap3.jdadelivers.com:4600
+2025-06-06 17:11:43,485 - DEBUG - Preparing to run command: ['C:\\WINDOWS\\system32\\curl.EXE', '-I', '-v', 'http://kcafeprdap3.jdadelivers.com:4600'] with label: Curl Header Check
+2025-06-06 17:11:43,527 - DEBUG - Command started: ['C:\\WINDOWS\\system32\\curl.EXE', '-I', '-v', 'http://kcafeprdap3.jdadelivers.com:4600']
+2025-06-06 17:11:44,896 - ERROR - Curl Header Check failed: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0* Could not resolve host: kcafeprdap3.jdadelivers.com
+* shutting down connection #0
+curl: (6) Could not resolve host: kcafeprdap3.jdadelivers.com
+2025-06-06 17:11:44,897 - DEBUG - Command Curl Header Check finished.
+2025-06-06 17:12:27,813 - DEBUG - User selected menu option: 3
+2025-06-06 17:12:29,669 - DEBUG - User selected Curl test type: 1
+2025-06-06 17:12:35,813 - DEBUG - Port input is empty (optional).
+2025-06-06 17:12:35,813 - DEBUG - Running Curl Header Check on URL: https://ba29-toll-wms-app-pr3.jdadelivers.com
+2025-06-06 17:12:35,813 - DEBUG - Preparing to run command: ['C:\\WINDOWS\\system32\\curl.EXE', '-I', '-v', 'https://ba29-toll-wms-app-pr3.jdadelivers.com'] with label: Curl Header Check
+2025-06-06 17:12:35,853 - DEBUG - Command started: ['C:\\WINDOWS\\system32\\curl.EXE', '-I', '-v', 'https://ba29-toll-wms-app-pr3.jdadelivers.com']
+2025-06-06 17:12:37,628 - ERROR - Curl Header Check failed: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host ba29-toll-wms-app-pr3.jdadelivers.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 107.162.154.90
+*   Trying 107.162.154.90:443...
+* schannel: disabled automatic use of client certificate
+* ALPN: curl offers http/1.1
+* ALPN: server did not agree on a protocol. Uses default.
+* Connected to ba29-toll-wms-app-pr3.jdadelivers.com (107.162.154.90) port 443
+* using HTTP/1.x
+> HEAD / HTTP/1.1
+
+> Host: ba29-toll-wms-app-pr3.jdadelivers.com
+
+> User-Agent: curl/8.13.0
+
+> Accept: */*
+
+> 
+
+* Request completely sent off
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0* Recv failure: Connection was reset
+* schannel: recv returned CURLE_RECV_ERROR
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+* closing connection #0
+curl: (56) Recv failure: Connection was reset
+2025-06-06 17:12:37,629 - DEBUG - Command Curl Header Check finished.
+2025-06-06 17:13:25,805 - DEBUG - User selected menu option: 7
+2025-06-06 17:13:25,806 - DEBUG - Preparing to run command: ['netstat', '-ano'] with label: List Active Connections (netstat)
+2025-06-06 17:13:25,848 - DEBUG - Command started: ['netstat', '-ano']
+2025-06-06 17:13:25,908 - DEBUG - Command List Active Connections (netstat) finished.
+2025-06-09 09:59:27,533 - DEBUG - Starting main function.
+2025-06-09 09:59:27,660 - DEBUG - Detected OS: windows
+2025-06-09 09:59:27,660 - DEBUG - Checking admin privileges...
+2025-06-09 09:59:27,676 - DEBUG - Admin privileges: Yes
+2025-06-09 09:59:27,676 - INFO - OS detected: windows
+2025-06-09 09:59:27,676 - INFO - Admin privileges: Yes
+2025-06-09 09:59:27,676 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-09 09:59:27,677 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-09 09:59:27,677 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-09 09:59:27,677 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250609_095927.txt
+2025-06-09 09:59:27,678 - DEBUG - Output file created.
+2025-06-09 11:07:38,702 - DEBUG - User selected menu option: 2
+2025-06-09 11:07:53,237 - DEBUG - Running Nping test on target: 10.119.4.73, port: 3389
+2025-06-09 11:07:53,238 - DEBUG - Preparing to run command: ['nping', '--tcp', '-c', '20', '10.119.4.73', '-p', '3389'] with label: Nping test
+2025-06-09 11:07:53,445 - DEBUG - Command started: ['nping', '--tcp', '-c', '20', '10.119.4.73', '-p', '3389']
+2025-06-09 11:07:53,445 - DEBUG - Retrieving sudo password...
+2025-06-09 11:08:14,285 - DEBUG - Command Nping test finished.
+2025-06-10 13:03:48,862 - DEBUG - Starting main function.
+2025-06-10 13:03:48,986 - DEBUG - Detected OS: windows
+2025-06-10 13:03:48,987 - DEBUG - Checking admin privileges...
+2025-06-10 13:03:49,000 - DEBUG - Admin privileges: Yes
+2025-06-10 13:03:49,000 - INFO - OS detected: windows
+2025-06-10 13:03:49,001 - INFO - Admin privileges: Yes
+2025-06-10 13:03:49,001 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-10 13:03:49,001 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-10 13:03:49,001 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-10 13:03:49,001 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250610_130349.txt
+2025-06-10 13:03:49,003 - DEBUG - Output file created.
+2025-06-10 13:03:51,792 - DEBUG - User selected menu option: 9
+2025-06-10 13:03:51,792 - INFO - Exiting program.
+2025-06-10 13:03:53,564 - DEBUG - Starting main function.
+2025-06-10 13:03:53,672 - DEBUG - Detected OS: windows
+2025-06-10 13:03:53,673 - DEBUG - Checking admin privileges...
+2025-06-10 13:03:53,684 - DEBUG - Admin privileges: Yes
+2025-06-10 13:03:53,684 - INFO - OS detected: windows
+2025-06-10 13:03:53,684 - INFO - Admin privileges: Yes
+2025-06-10 13:03:53,684 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-10 13:03:53,684 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-10 13:03:53,684 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-10 13:03:53,685 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250610_130353.txt
+2025-06-10 13:03:53,686 - DEBUG - Output file created.
+2025-06-10 13:03:55,544 - DEBUG - User selected menu option: 8
+2025-06-10 13:04:06,824 - DEBUG - Running full diagnostic on target: 139.177.97.180, port: 22
+2025-06-10 13:04:06,829 - DEBUG - Preparing to run command: ['nmap', '-p', '22', '-T4', '-A', '-v', '139.177.97.180'] with label: Nmap scan
+2025-06-10 13:04:06,995 - DEBUG - Command started: ['nmap', '-p', '22', '-T4', '-A', '-v', '139.177.97.180']
+2025-06-10 13:04:19,199 - DEBUG - Command Nmap scan finished.
+2025-06-10 13:04:19,205 - DEBUG - Preparing to run command: ['nping', '--tcp', '-c', '20', '139.177.97.180', '-p', '22'] with label: Nping test
+2025-06-10 13:04:19,348 - DEBUG - Command started: ['nping', '--tcp', '-c', '20', '139.177.97.180', '-p', '22']
+2025-06-10 13:04:19,348 - DEBUG - Retrieving sudo password...
+2025-06-10 13:04:39,137 - DEBUG - Command Nping test finished.
+2025-06-10 13:05:01,779 - DEBUG - Preparing to run command: ['curl', '-I', 'https://139.177.97.180:22'] with label: Curl test (Full Diagnostic)
+2025-06-10 13:05:01,911 - DEBUG - Command started: ['curl', '-I', 'https://139.177.97.180:22']
+2025-06-10 13:05:02,286 - ERROR - Curl test (Full Diagnostic) failed: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (35) Recv failure: Connection was reset
+2025-06-10 13:05:02,289 - DEBUG - Command Curl test (Full Diagnostic) finished.
+2025-06-10 13:05:02,289 - DEBUG - Preparing to run command: ['ping', '-n', '20', '139.177.97.180'] with label: Ping test
+2025-06-10 13:05:02,434 - DEBUG - Command started: ['ping', '-n', '20', '139.177.97.180']
+2025-06-10 13:06:41,499 - ERROR - Ping test failed: 
+2025-06-10 13:06:41,500 - DEBUG - Command Ping test finished.
+2025-06-10 13:13:43,130 - DEBUG - Starting PCAP capture on Windows for target: 139.177.97.180
+2025-06-10 13:13:43,132 - DEBUG - Preparing to run command: ['netsh', 'trace', 'start', 'capture=yes', 'IPv4.Address=139.177.97.180', 'Maxsize=2000M', 'tracefile=C:\\Users\\1039488\\desktop\\net_trace_20250610-131343.etl', 'overwrite=yes', 'persistent=yes'] with label: PCAP capture (Windows)
+2025-06-10 13:13:43,174 - DEBUG - Command started: ['netsh', 'trace', 'start', 'capture=yes', 'IPv4.Address=139.177.97.180', 'Maxsize=2000M', 'tracefile=C:\\Users\\1039488\\desktop\\net_trace_20250610-131343.etl', 'overwrite=yes', 'persistent=yes']
+2025-06-10 13:13:43,436 - ERROR - PCAP capture (Windows) failed: 
+2025-06-10 13:13:43,437 - DEBUG - Command PCAP capture (Windows) finished.
+2025-06-12 09:35:27,894 - DEBUG - Starting main function.
+2025-06-12 09:35:28,009 - DEBUG - Detected OS: windows
+2025-06-12 09:35:28,009 - DEBUG - Checking admin privileges...
+2025-06-12 09:35:28,027 - DEBUG - Admin privileges: Yes
+2025-06-12 09:35:28,028 - INFO - OS detected: windows
+2025-06-12 09:35:28,028 - INFO - Admin privileges: Yes
+2025-06-12 09:35:28,028 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-12 09:35:28,028 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-12 09:35:28,028 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-12 09:35:28,029 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250612_093528.txt
+2025-06-12 09:35:28,029 - DEBUG - Output file created.
+2025-06-12 09:40:58,465 - DEBUG - User selected menu option: 8
+2025-06-12 09:43:44,685 - DEBUG - Running full diagnostic on target: 139.177.97.180, port: 22
+2025-06-12 09:43:44,689 - DEBUG - Preparing to run command: ['nmap', '-p', '22', '-T4', '-A', '-v', '139.177.97.180'] with label: Nmap scan
+2025-06-12 09:43:44,910 - DEBUG - Command started: ['nmap', '-p', '22', '-T4', '-A', '-v', '139.177.97.180']
+2025-06-12 09:43:55,151 - DEBUG - Command Nmap scan finished.
+2025-06-12 09:43:55,155 - DEBUG - Preparing to run command: ['nping', '--tcp', '-c', '20', '139.177.97.180', '-p', '22'] with label: Nping test
+2025-06-12 09:43:55,291 - DEBUG - Command started: ['nping', '--tcp', '-c', '20', '139.177.97.180', '-p', '22']
+2025-06-12 09:43:55,291 - DEBUG - Retrieving sudo password...
+2025-06-12 09:44:14,973 - DEBUG - Command Nping test finished.
+2025-06-12 09:45:59,278 - DEBUG - Preparing to run command: ['curl', '-I', 'http://139.177.97.180:22'] with label: Curl test (Full Diagnostic)
+2025-06-12 09:45:59,334 - DEBUG - Command started: ['curl', '-I', 'http://139.177.97.180:22']
+2025-06-12 09:45:59,483 - DEBUG - Command Curl test (Full Diagnostic) finished.
+2025-06-12 09:45:59,483 - DEBUG - Preparing to run command: ['ping', '-n', '20', '139.177.97.180'] with label: Ping test
+2025-06-12 09:45:59,645 - DEBUG - Command started: ['ping', '-n', '20', '139.177.97.180']
+2025-06-12 09:47:38,529 - ERROR - Ping test failed: 
+2025-06-12 09:47:38,529 - DEBUG - Command Ping test finished.
+2025-06-12 09:49:01,762 - DEBUG - Starting PCAP capture on Windows for target: 8.8.8.8
+2025-06-12 09:49:01,763 - DEBUG - Preparing to run command: ['netsh', 'trace', 'start', 'capture=yes', 'IPv4.Address=8.8.8.8', 'Maxsize=2000M', 'tracefile=C:\\Users\\1039488\\desktop\\net_trace_20250612-094901.etl', 'overwrite=yes', 'persistent=yes'] with label: PCAP capture (Windows)
+2025-06-12 09:49:01,804 - DEBUG - Command started: ['netsh', 'trace', 'start', 'capture=yes', 'IPv4.Address=8.8.8.8', 'Maxsize=2000M', 'tracefile=C:\\Users\\1039488\\desktop\\net_trace_20250612-094901.etl', 'overwrite=yes', 'persistent=yes']
+2025-06-12 09:49:02,166 - ERROR - PCAP capture (Windows) failed: 
+2025-06-12 09:49:02,166 - DEBUG - Command PCAP capture (Windows) finished.
+2025-06-12 09:49:39,102 - DEBUG - Starting main function.
+2025-06-12 09:49:39,224 - DEBUG - Detected OS: windows
+2025-06-12 09:49:39,224 - DEBUG - Checking admin privileges...
+2025-06-12 09:49:39,235 - DEBUG - Admin privileges: Yes
+2025-06-12 09:49:39,235 - INFO - OS detected: windows
+2025-06-12 09:49:39,236 - INFO - Admin privileges: Yes
+2025-06-12 09:49:39,236 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-12 09:49:39,236 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-12 09:49:39,237 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-12 09:49:39,237 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250612_094939.txt
+2025-06-12 09:49:39,238 - DEBUG - Output file created.
+2025-06-12 09:49:43,835 - DEBUG - User selected menu option: 7
+2025-06-12 09:49:43,836 - DEBUG - Preparing to run command: ['netstat', '-ano'] with label: List Active Connections (netstat)
+2025-06-12 09:49:43,875 - DEBUG - Command started: ['netstat', '-ano']
+2025-06-12 09:49:43,941 - DEBUG - Command List Active Connections (netstat) finished.
+2025-06-12 09:50:06,115 - DEBUG - User selected menu option: 6
+2025-06-12 10:31:56,682 - DEBUG - Starting main function.
+2025-06-12 10:31:56,797 - DEBUG - Detected OS: windows
+2025-06-12 10:31:56,797 - DEBUG - Checking admin privileges...
+2025-06-12 10:31:56,809 - DEBUG - Admin privileges: Yes
+2025-06-12 10:31:56,810 - INFO - OS detected: windows
+2025-06-12 10:31:56,810 - INFO - Admin privileges: Yes
+2025-06-12 10:31:56,810 - DEBUG - Checking for etl2pcapng.exe...
+2025-06-12 10:31:56,810 - DEBUG - etl2pcapng.exe found at C:\etl2pcapng\etl2pcapng.exe
+2025-06-12 10:31:56,810 - DEBUG - etl2pcapng.exe found: Yes at C:\etl2pcapng\etl2pcapng.exe
+2025-06-12 10:31:56,811 - DEBUG - Creating output file at C:\Users\1039488\desktop\tool_diagn_20250612_103156.txt
+2025-06-12 10:31:56,812 - DEBUG - Output file created.
+2025-06-12 10:32:03,853 - DEBUG - User selected menu option: 8
+2025-06-12 10:32:12,316 - DEBUG - Running full diagnostic on target: be72-bjs-wms-con-pr2.jdadelivers.com/, port: 443
+2025-06-12 10:32:12,321 - DEBUG - Preparing to run command: ['nmap', '-p', '443', '-T4', '-A', '-v', 'be72-bjs-wms-con-pr2.jdadelivers.com/'] with label: Nmap scan
+2025-06-12 10:32:12,485 - DEBUG - Command started: ['nmap', '-p', '443', '-T4', '-A', '-v', 'be72-bjs-wms-con-pr2.jdadelivers.com/']
+2025-06-12 10:32:12,927 - DEBUG - Command Nmap scan finished.
+2025-06-12 10:32:12,931 - DEBUG - Preparing to run command: ['nping', '--tcp', '-c', '20', 'be72-bjs-wms-con-pr2.jdadelivers.com/', '-p', '443'] with label: Nping test
+2025-06-12 10:32:13,009 - DEBUG - Command started: ['nping', '--tcp', '-c', '20', 'be72-bjs-wms-con-pr2.jdadelivers.com/', '-p', '443']
+2025-06-12 10:32:13,010 - DEBUG - Retrieving sudo password...
+2025-06-12 10:32:32,924 - DEBUG - Command Nping test finished.
+2025-06-12 10:32:32,926 - WARNING - Invalid protocol entered for Curl test in full diagnostic.
+2025-06-12 10:32:42,168 - DEBUG - User selected menu option: 8
+2025-06-12 10:32:49,447 - DEBUG - Running full diagnostic on target: be72-bjs-wms-con-pr2.jdadelivers.com/, port: 443
+2025-06-12 10:32:49,451 - DEBUG - Preparing to run command: ['nmap', '-p', '443', '-T4', '-A', '-v', 'be72-bjs-wms-con-pr2.jdadelivers.com/'] with label: Nmap scan
+2025-06-12 10:32:49,487 - DEBUG - Command started: ['nmap', '-p', '443', '-T4', '-A', '-v', 'be72-bjs-wms-con-pr2.jdadelivers.com/']
+2025-06-12 10:32:49,955 - DEBUG - Command Nmap scan finished.
+2025-06-12 10:32:49,961 - DEBUG - Preparing to run command: ['nping', '--tcp', '-c', '20', 'be72-bjs-wms-con-pr2.jdadelivers.com/', '-p', '443'] with label: Nping test
+2025-06-12 10:32:49,994 - DEBUG - Command started: ['nping', '--tcp', '-c', '20', 'be72-bjs-wms-con-pr2.jdadelivers.com/', '-p', '443']
+2025-06-12 10:32:49,994 - DEBUG - Retrieving sudo password...
+2025-06-12 10:33:10,762 - DEBUG - Command Nping test finished.
+2025-06-12 10:33:16,073 - DEBUG - Preparing to run command: ['curl', '-I', 'https://be72-bjs-wms-con-pr2.jdadelivers.com/:443'] with label: Curl test (Full Diagnostic)
+2025-06-12 10:33:16,116 - DEBUG - Command started: ['curl', '-I', 'https://be72-bjs-wms-con-pr2.jdadelivers.com/:443']
+2025-06-12 10:33:18,687 - DEBUG - Command Curl test (Full Diagnostic) finished.
+2025-06-12 10:33:18,687 - DEBUG - Preparing to run command: ['ping', '-n', '20', 'be72-bjs-wms-con-pr2.jdadelivers.com/'] with label: Ping test
+2025-06-12 10:33:18,723 - DEBUG - Command started: ['ping', '-n', '20', 'be72-bjs-wms-con-pr2.jdadelivers.com/']
+2025-06-12 10:33:18,791 - ERROR - Ping test failed: 
+2025-06-12 10:33:18,791 - DEBUG - Command Ping test finished.

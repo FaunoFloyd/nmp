@@ -1,4 +1,4 @@
-# net.py
+# nmp.py
 import subprocess
 import platform
 import shutil
@@ -320,7 +320,7 @@ def display_banner():
 ##########################################################
 ##########################################################    
            /^\/^\
-         _|__|  O|     Network Management Package v1.0
+         _|__|  O|     Network Management Portal v1.0
 \/     /~     \_/ \
  \____|__________/  \
         \_______      \
