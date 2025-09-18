@@ -2,8 +2,8 @@ Got it 👍 — the Confluence formatting won’t look clean in GitHub, so I’l
 
 Here’s the cleaned-up version:
 
-````markdown
-# Standard Operating Procedure: NMP Network Diagnostic Toolkit
+
+## Standard Operating Procedure: NMP Network Diagnostic Toolkit
 
 | Field        | Value                  |
 |--------------|------------------------|
@@ -12,7 +12,7 @@ Here’s the cleaned-up version:
 | **Author**      | Your Name/Team       |
 | **Date**        | June 7, 2025         |
 | **Status**      | Final                |
-````
+
 ---
 
 ## 1.0 Purpose
@@ -32,11 +32,11 @@ Before using the NMP toolkit, ensure the following are met on the client machine
 1. **Python**: Python 3.6 or newer must be installed.
 2. **Git**: Git client must be installed to clone the repository.
 3. **Repository Files**: Clone the toolkit from GitHub:
-   ```bash
+   ````
    git clone https://github.com/your-username/nmp.git
    cd nmp
-````
-````
+   ````
+
 4. **Python Dependencies**: Install required packages:
 
    ```bash
@@ -237,7 +237,6 @@ You’ll be prompted for IP/port once.
 Interpret each section as per **5.0 Test Procedures**.
 
 ```
----
 ```
 
 ![image](https://github.com/user-attachments/assets/a0f87676-8493-4c24-8e86-0efd121cc57e)
